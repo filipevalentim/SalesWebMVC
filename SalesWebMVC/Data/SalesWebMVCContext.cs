@@ -8,6 +8,8 @@ namespace SalesWebMVC.Data
             : base(options)
         {
         }
-        public DbSet<SalesWebMVC.Models.Department> Department { get; set; } = default!;
+        public DbSet<SalesWebMVC.Models.Department> Department { get; set; }
+        public DbSet<SalesWebMVC.Models.Seller> Seller { get; set; }
+        public DbSet<SalesWebMVC.Models.SalesRecord> SalesRecords { get; set; }
     }
 }
