@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using SalesWebMVC.Data;
+using SalesWebMVC.Services;
 
 namespace SalesWebMVC
 {
@@ -15,6 +16,7 @@ namespace SalesWebMVC
         (options => options.UseMySql(connectionString, serverVersion, builder => builder.MigrationsAssembly("SalesWebMVC")));
 
       builder.Services.AddScoped<SeedingService>();
+      builder.Services.AddScoped<SellerService>();
       // Add services to the container.
       builder.Services.AddControllersWithViews();
 
