@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SalesWebMVC.Models;
 
 namespace SalesWebMVC.Data
 {
@@ -8,8 +9,8 @@ namespace SalesWebMVC.Data
             : base(options)
         {
         }
-        public DbSet<SalesWebMVC.Models.Department> Department { get; set; }
-        public DbSet<SalesWebMVC.Models.Seller> Seller { get; set; }
-        public DbSet<SalesWebMVC.Models.SalesRecord> SalesRecords { get; set; }
+        public DbSet<Department> Department { get; set; }
+        public DbSet<Seller> Seller { get; set; }
+        public DbSet<SalesRecord> SalesRecords { get; set; }
     }
 }

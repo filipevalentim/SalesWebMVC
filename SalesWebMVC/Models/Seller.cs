@@ -7,7 +7,7 @@
     public string Email { get; set; }
     public DateTime Birthdate { get; set; }
     public double BaseSalary { get; set; }
-    public Department Department { get; set; }
+    public Department? Department { get; set; }
     public ICollection<SalesRecord> Sales { get; set; } = new List<SalesRecord>();
     public Seller() { }
 
@@ -22,7 +22,6 @@
     }
 
     public void AddSales(SalesRecord salesRecord) => Sales.Add(salesRecord);
-
     public void RemoveSales(SalesRecord salesRecord) => Sales.Remove(salesRecord);
     public double TotalSales(DateTime initial, DateTime end)
     {

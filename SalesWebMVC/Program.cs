@@ -30,8 +30,8 @@ namespace SalesWebMVC
         app.UseHsts();
 
       }
-
-      app.Services.CreateScope().ServiceProvider.GetService<SeedingService>().Seed();
+      
+      app.Services.CreateScope().ServiceProvider.GetRequiredService<SeedingService>().Seed();
 
       app.UseHttpsRedirection();
       app.UseStaticFiles();
