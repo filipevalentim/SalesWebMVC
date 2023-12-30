@@ -1,6 +1,4 @@
-﻿using System.Runtime.Serialization;
-
-namespace SalesWebMVC.Services.Exceptions
+﻿namespace SalesWebMVC.Services.Exceptions
 {
   public class NotFoundException : ApplicationException
   {

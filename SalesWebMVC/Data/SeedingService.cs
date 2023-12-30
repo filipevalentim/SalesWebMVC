@@ -1,6 +1,4 @@
-﻿using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SalesWebMVC.Models;
+﻿using SalesWebMVC.Models;
 using SalesWebMVC.Models.Enums;
 
 namespace SalesWebMVC.Data
