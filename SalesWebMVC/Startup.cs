@@ -31,6 +31,7 @@ public class Startup : IStartup
       service.AddScoped<SeedingService>();
       service.AddScoped<SellerService>();
       service.AddScoped<DepartmentService>();
+      service.AddScoped<SalesRecordService>();
       service.AddControllersWithViews();
     }
 
