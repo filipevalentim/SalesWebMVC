@@ -12,7 +12,7 @@
     [DataType(DataType.EmailAddress)]
     public string Email { get; set; }
     [Display(Name = "Birth Date")]
-    [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
+    [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
     //[Range(16, 100, ErrorMessage = "Sua idade tem que ser entre {1} e {2}")]
     [DataType(DataType.Date)]
     [Required(ErrorMessage = "Seu aniversário é obrigatório!")]
